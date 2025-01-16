@@ -99,11 +99,4 @@ To get a copy of the project up and running on your local machine, follow these 
 
 ## Acknowledgements
 
-We would like to thank the Supreme Court of India Hackathon 2024 for providing the opportunity to develop this project. Special thanks to our team members:
-
-- Shreeja Sharma
-- Shrutika Shripat
-- Vijay Kumar
-- Vishwas Dubey
-- Yash Kavaiya
-
+We would like to thank the Supreme Court of India Hackathon 2024 for providing the opportunity to develop this project.
