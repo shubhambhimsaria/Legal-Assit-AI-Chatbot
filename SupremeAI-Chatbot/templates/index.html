@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Legal Insight Hub</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Law Firm Website Template" name="keywords">
+    <meta content="Law Firm Website Template" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- ----------------------chatbot------------------------------ -->
+    <link rel="stylesheet"
+        href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+
+</head>
+
+<body>
+
+    <df-messenger project-id="gen-ai-guru-live-lecture" agent-id="692d35fa-5ccd-4875-8f1e-af71488d3fca"
+    language-code="en" max-query-length="-1" df-messenger-chat-border=#aa9166>
+    <df-messenger-chat-bubble chat-title="Legal Assist" chat-subtitle="Your Legal Guide, Anytime, Anywhere"
+        chat-title-icon="img/3d illustration of law_14546746.png" 
+         chat-width="400">
+    </df-messenger-chat-bubble>
+</df-messenger>
+
+<div class="speech-bubble">
+    <div class="text-content">Ask here!</div>
+</div>
+
+<style>
+    df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: black;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-titlebar-subtitle-font-color:#121518;
+        --df-messenger-chat-background: black;
+        --df-messenger-message-user-background: #fff;
+            --df-messenger-message-bot-background: #fff;
+        --df-messenger-chat-title-icon-size: 100px;
+        --df-messenger-chat-collapse-icon: 100px;
+        --df-messenger-chat-border: #aa9166;
+        --df-messenger-titlebar-background: #9b835a;
+        bottom: 16px;
+        right: 16px;
+        --df-messenger-titlebar-font-color: black;
+        --df-messenger-titlebar-subtitle-font-color: black;
+        --df-messenger-titlebar-icon-width: 40px;
+        --df-messenger-titlebar-icon-height: 40px;
+        --df-messenger-titlebar-title-letter-spacing: 1px;
+        --df-messenger-titlebar-title-font-weight: 600;
+        --df-messenger-chat-border-radius: 3px;
+        --df-messenger-message-bot-font-color: black;
+        --df-messenger-message-user-font-color: black;
+        --df-messenger-chat-bubble-icon-color: #aa9166;
+        --df-messenger-titlebar-subtitle-font-family:EB Garamond, serif;
+        --df-messenger-input-background:#aa9166;
+        
+
+    }
+
+
+    /* Speech bubble styling */
+    .speech-bubble {
+        position: fixed;
+        bottom: 105px; /* Adjust to position above the chatbot icon */
+        right: 25px; /* Adjust based on icon position */
+        background-color: #aa9166; /* Color of the speech bubble */
+        color: black;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 998;
+        max-width: 150px;
+    }
+
+    /* Small triangle at the bottom of the speech bubble */
+    .speech-bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -9px; /* Position the triangle */
+        left: 50%;
+        margin-left: 2px;
+        width: 0;
+        height: 0;
+        border-width: 10px 10px 0;
+        border-style: solid;
+        border-color: #aa9166 transparent;
+    }
+
+    /* Text inside the speech bubble */
+    .text-content {
+        font-family: 'Arial', sans-serif; /* Change font to match the example */
+    }
+</style>
+
+
+    <div class="wrapper">
+
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h1>Legal Insight Hub</h1>
+                                <img src="img/3d illustration of law_14546746.png" alt="Logo" style="margin-top: -4.4rem; ">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="#" class="nav-item nav-link">About</a>
+                            <a href="#" class="nav-item nav-link">Practice</a>
+                            <a href="#" class="nav-item nav-link">Attorneys</a>
+                            <a href="#" class="nav-item nav-link">Case Studies</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Blog Page</a>
+                                    <a href="#" class="dropdown-item">Single Page</a>
+                                </div>
+                            </div>
+                            <a href="#" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="ml-auto">
+                            <!-- <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Get Appointment</a> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Carousel Start -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/law.jpg" alt="Carousel Image">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInLeft">Your Justice, Our Mission</h1>
+                        <p class="animated fadeInRight">We advocate passionately to defend your rights and achieve fair
+                            outcomes for you.</p>
+                        <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/law8.jpg" alt="Carousel Image">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInLeft">Ready to Battle for Your Legal Rights</h1>
+                        <p class="animated fadeInRight">We are fully prepared to vigorously defend and assert your legal
+                            rights in any situation.</p>
+                        <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/law7.jpg" alt="Carousel Image">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInLeft">Stay Informed, Stay Protected</h1>
+                        <p class="animated fadeInRight"> Staying aware helps you defend your rights and stay secure</p>
+                        <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Top Feature Start-->
+        <div class="feature-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="far fa-check-circle"></i>
+                            <h3>Legal</h3>
+                            <p>Govt Approved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="fa fa-user-tie"></i>
+                            <h3>Attorneys</h3>
+                            <p>Expert Attorneys</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="far fa-thumbs-up"></i>
+                            <h3>Success</h3>
+                            <p>99.99% Case Won</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="far fa-handshake"></i>
+                            <h3>Support</h3>
+                            <p>Quick Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Feature End-->
+
+
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="img/law9.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header">
+                            <h2>Learn About Us</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Legal Insight Hub is a cutting-edge legal information platform designed to provide users
+                                with easy access to the Constitution of India, 1950.
+                                Our innovative chatbot is dedicated to answering queries on case related information,
+                                summarized judgments, court documents, and other legal content. We aim to simplify legal
+                                complexities and empower users with valuable knowledge and resources,
+                            <p>
+                                Discover a wealth of legal information at your fingertips with LegalEase Hub. Our
+                                platform is your go-to source for understanding legal concepts, accessing Important
+                                documents, and staying informed about the latest developments in Indian law. </p>
+                            </p>
+                            <!-- <a class="btn" href="">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-about">
+                            <h2>About Us</h2>
+                            <p>
+                                Legal Insight Hub is a cutting-edge legal information platform designed to provide users with 
+                                easy access to the Constitution of India, 1950. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-link">
+                                    <h2>Services Areas</h2>
+                                    <a href="">Civil Law</a>
+                                    <a href="">Family Law</a>
+                                    <a href="">Business Law</a>
+                                    <a href="">Education Law</a>
+                                    <a href="">Immigration Law</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-link">
+                                    <h2>Useful Pages</h2>
+                                    <a href="">About Us</a>
+                                    <a href="">Practices</a>
+                                    <a href="">Attorneys</a>
+                                    <a href="">Case Studies</a>
+                                    <a href="">FAQs</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-contact">
+                                    <h2>Get In Touch</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>123 Street, Pune, India</p>
+                                    <p><i class="fa fa-phone-alt"></i>+91 345 67890</p>
+                                    <p><i class="fa fa-envelope"></i>supreme@example.com</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-menu">
+                <div class="f-menu">
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Help</a>
+                    <a href="">FQAs</a>
+                </div>
+            </div>
+            <!-- <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">HTML Codex</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
